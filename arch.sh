@@ -4,7 +4,7 @@ set -e
 
 sudo pacman -Syu
 
-sudo pacman -S bash-completion virtualbox-guest-iso firefox-i18n-it pluma evince libreoffice-fresh-it vlc k3b gpicview thunderbird-i18n-it galculator-gtk2 virtualbox flashplugin wicd-gtk xdg-utils xdg-user-dirs-gtk ntfs-3g gparted autorandr lxrandr pcmanfm screenfetch nano wpa_supplicant libdvdcss dvd+rw-tools lxdm xarchiver zip unzip unrar tar gzip xz dosfstools htop mtools laptop-detect lxappearance-obconf lxterminal menu-cache lxmenu-data lxpanel lxhotkey lxinput lxsession xf86-video-fbdev xf86-video-vmware xf86-video-vesa acpid firefox-ublock-origin alsa-utils xterm gtk-engine-murrine gnome-themes-extra nvidia-utils python2-notify gvfs libnotify faenza-icon-theme system-config-printer gimp git lxde-common notify-osd cups kinit kparts parcellite linux-headers gvfs-afc usbmuxd ntp
+sudo pacman -S bash-completion firefox-i18n-it pluma evince libreoffice-fresh-it vlc k3b gpicview thunderbird-i18n-it galculator-gtk2 virtualbox flashplugin wicd-gtk xdg-utils xdg-user-dirs-gtk ntfs-3g gparted autorandr lxrandr pcmanfm screenfetch nano wpa_supplicant libdvdcss dvd+rw-tools lxdm xarchiver zip unzip unrar tar gzip xz dosfstools htop mtools laptop-detect lxappearance-obconf lxterminal menu-cache lxmenu-data lxpanel lxhotkey lxinput lxsession xf86-video-fbdev xf86-video-vmware xf86-video-vesa acpid firefox-ublock-origin alsa-utils xterm gtk-engine-murrine gnome-themes-extra nvidia-utils python2-notify gvfs libnotify faenza-icon-theme system-config-printer gimp git lxde-common notify-osd cups kinit kparts parcellite linux-headers gvfs-afc usbmuxd ntp
 
 sudo pacman -S --needed base-devel
 sudo nano /etc/makepkg.conf
@@ -21,6 +21,7 @@ yay -S jdownloader2
 yay -S osx-arc-shadow
 yay -S capitaine-cursors
 yay -S lxkb_config-git
+yay virtualbox-ext-oracle
 yay ttf-ms-fonts
 
 #
