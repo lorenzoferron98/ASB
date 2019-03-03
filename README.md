@@ -1,5 +1,5 @@
 # ASB
-ArchScriptBash is script to configure a raw ArchLinux installation.
+ArchScriptsBash are scripts to configure a raw ArchLinux installation.
 
 ## Download
 ### arch.sh
