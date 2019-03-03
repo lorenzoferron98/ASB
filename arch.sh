@@ -65,6 +65,7 @@ yay -S xorg-xkbprint
 
 # www.pool.ntp.it
 sudo timedatectl set-timezone Europe/Rome
+sudo nano /etc/ntp.conf
 
 #
 # Keyboard configuration
