@@ -4,7 +4,44 @@ set -e
 
 sudo pacman -Syu
 
-sudo pacman -S bash-completion firefox-i18n-it pluma evince libreoffice-fresh-it vlc k3b gpicview thunderbird-i18n-it galculator-gtk2 virtualbox flashplugin wicd-gtk xdg-utils xdg-user-dirs-gtk ntfs-3g gparted autorandr lxrandr pcmanfm screenfetch nano wpa_supplicant libdvdcss dvd+rw-tools lxdm xarchiver zip unzip unrar tar gzip xz dosfstools htop mtools laptop-detect lxappearance-obconf lxterminal menu-cache lxmenu-data lxpanel lxhotkey lxinput lxsession xf86-video-fbdev xf86-video-vmware xf86-video-vesa acpid firefox-ublock-origin alsa-utils xterm gtk-engine-murrine gnome-themes-extra nvidia-utils python2-notify gvfs libnotify faenza-icon-theme system-config-printer gimp git lxde-common notify-osd cups kinit kparts parcellite linux-headers gvfs-afc usbmuxd ntp
+# I pacchetti correlati (od opzionali) inserirli sulla stessa linea.
+# Se si vuole evitare di installare pacchetti commentare le righe.
+sudo pacman -S bash-completion \
+               firefox-i18n-it firefox-ublock-origin \
+               pluma \
+               gnome-icon-theme kaffeine kio-extras kio kded \
+               evince \
+               libreoffice-fresh-it \
+               vlc libdvdcss nvidia-utils pulseaudio \
+               k3b dvd+rw-tools kinit kparts \
+               gpicview \
+               thunderbird-i18n-it \
+               galculator-gtk2 \
+               virtualbox linux-headers \
+               flashplugin \
+               wicd-gtk xfce4-notifyd python2-notify \
+               xdg-utils xdg-user-dirs-gtk \
+               ntfs-3g \
+               gparted \
+               autorandr lxrandr \
+               pcmanfm gvfs gvfs-afc usbmuxd gvfs-gphoto2 \
+               screenfetch \
+               nano wpa_supplicant \
+               lxdm lxterminal menu-cache lxmenu-data lxhotkey lxinput lxsession lxde-common \
+               lxpanel libnotify parcellite \
+               lxappearance-obconf gtk-engine-murrine faenza-icon-theme gnome-themes-extra \
+               xarchiver zip unzip unrar tar gzip xz \
+               dosfstools mtools \
+               htop \
+               laptop-detect \
+               xf86-video-fbdev xf86-video-vmware xf86-video-vesa  \
+               acpid \
+               system-config-printer cups \
+               alsa-utils xterm \
+               gimp \
+               git \
+               xorg-xkill \
+               ntp
 
 sudo pacman -S --needed base-devel
 sudo nano /etc/makepkg.conf
