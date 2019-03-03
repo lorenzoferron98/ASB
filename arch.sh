@@ -16,13 +16,7 @@ cd ..
 
 yay
 
-yay jre8
-yay -S jdownloader2
-yay -S osx-arc-shadow
-yay -S capitaine-cursors
-yay -S lxkb_config-git
-yay virtualbox-ext-oracle
-yay ttf-ms-fonts
+yay -S jre8 jdownloader2 osx-arc-shadow capitaine-cursors lxkb_config-git virtualbox-ext-oracle ttf-ms-fonts
 
 #
 # Show keyboard geometry/model. https://superuser.com/q/1293956
@@ -65,4 +59,3 @@ sudo systemctl stop dhcpcd.service
 sudo systemctl disable dhcpcd.service
 
 sudo reboot now
-
