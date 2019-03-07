@@ -63,7 +63,7 @@ yay -S jdownloader2 osx-arc-shadow capitaine-cursors lxkb_config-git virtualbox-
 #
 yay -S xorg-xkbprint
 
-# www.pool.ntp.it
+# https://en.wikipedia.org/wiki/NTP_pool
 sudo timedatectl set-timezone Europe/Rome
 sudo nano /etc/ntp.conf
 
