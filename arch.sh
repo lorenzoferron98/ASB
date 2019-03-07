@@ -54,7 +54,7 @@ cd ..
 yay
 
 yay -S jre8 
-yay -S jdownloader2 osx-arc-shadow capitaine-cursors lxkb_config-git virtualbox-ext-oracle ttf-ms-fonts
+yay -S jdownloader2 osx-arc-shadow capitaine-cursors lxkb_config-git virtualbox-ext-oracle ttf-ms-fonts gksu
 
 #
 # Show keyboard geometry/model. https://superuser.com/q/1293956
