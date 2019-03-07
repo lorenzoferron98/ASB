@@ -50,7 +50,7 @@ yay -S osx-arc-shadow capitaine-cursors lxkb_config-git gksu
 #
 yay -S xorg-xkbprint
 
-# www.pool.ntp.it
+# https://en.wikipedia.org/wiki/NTP_pool
 sudo timedatectl set-timezone Europe/Rome
 sudo nano /etc/ntp.conf
 
