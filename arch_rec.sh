@@ -41,7 +41,7 @@ cd ..
 
 yay
 
-yay -S osx-arc-shadow capitaine-cursors lxkb_config-git
+yay -S osx-arc-shadow capitaine-cursors lxkb_config-git gksu
 
 #
 # Show keyboard geometry/model. https://superuser.com/q/1293956
