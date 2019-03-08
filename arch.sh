@@ -46,7 +46,6 @@ sudo pacman -S \
                nvidia-settings \
                gnome-screenshot \
                pinta \
-               catfish \
                ntp
 
 sudo pacman -S --needed base-devel
