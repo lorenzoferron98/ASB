@@ -44,14 +44,18 @@ cd ..
 
 yay
 
-yay -S osx-arc-shadow capitaine-cursors lxkb_config-git gksu
+yay -S \
+	osx-arc-shadow capitaine-cursors \
+	lxkb_config-git \
+	xorg-xkbprint \
+	gksu
 
 #
 # Show keyboard geometry/model. https://superuser.com/q/1293956
 #
 #	e.g.: setxkbmap -model pc104 -layout it -option terminate:ctrl_alt_bksp -print | xkbcomp - - | xkbprint - - | ps2pdf - > pc104_it.pdf
-#
-yay -S xorg-xkbprint
+# (vedi sopra, gia' presente)
+# yay -S xorg-xkbprint
 
 # https://en.wikipedia.org/wiki/NTP_pool
 sudo timedatectl set-timezone Europe/Rome
