@@ -35,7 +35,8 @@ sudo pacman -S \
                dosfstools mtools \
                htop \
                laptop-detect \
-               xf86-video-fbdev xf86-video-vmware xf86-video-vesa  \
+               xf86-video-fbdev xf86-video-vesa \
+	       # xf86-video-vmware \
                acpid \
                system-config-printer cups \
                alsa-utils xterm \
