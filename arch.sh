@@ -13,7 +13,7 @@ sudo pacman -S \
                gnome-icon-theme kaffeine kio-extras kio kded \
                evince \
                libreoffice-fresh-it \
-               vlc libdvdcss nvidia-utils pulseaudio \
+               vlc libdvdcss pulseaudio \
                k3b dvd+rw-tools kinit kparts \
                gpicview \
                thunderbird-i18n-it \
@@ -42,6 +42,10 @@ sudo pacman -S \
                gimp \
                git \
                xorg-xkill \
+               nvidia-settings \
+               gnome-screenshot \
+               pinta \
+               catfish \
                ntp
 
 sudo pacman -S --needed base-devel
@@ -62,14 +66,15 @@ yay -S \
         virtualbox-ext-oracle \
         ttf-ms-fonts \
         gksu \
+        xorg-xkbprint \
         gnome-system-tools
 
 #
 # Show keyboard geometry/model. https://superuser.com/q/1293956
 #
 #	e.g.: setxkbmap -model pc104 -layout it -option terminate:ctrl_alt_bksp -print | xkbcomp - - | xkbprint - - | ps2pdf - > pc104_it.pdf
-#
-yay -S xorg-xkbprint
+# (vedi sopra, gia' presente)
+# yay -S xorg-xkbprint
 
 # https://en.wikipedia.org/wiki/NTP_pool
 sudo timedatectl set-timezone Europe/Rome
@@ -85,11 +90,11 @@ sudo nano /etc/ntp.conf
 #		XkbVariant: se vuoto usa "", localectl list-x11-keymap-variants [layout] \
 #		XkbOptions: localectl list-x11-keymap-options
 #
-#localectl set-x11-keymap \
-#	it \
-#	pc105 \
-#	"" \
-#	terminate:ctrl_alt_bksp
+localectl set-x11-keymap \
+	it \
+	pc105 \
+	"" \
+	terminate:ctrl_alt_bksp
 
 sudo systemctl enable lxdm
 sudo systemctl start wicd
