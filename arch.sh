@@ -6,7 +6,8 @@ sudo pacman -Syu
 
 # I pacchetti correlati (od opzionali) inserirli sulla stessa linea.
 # Se si vuole evitare di installare pacchetti commentare le righe.
-sudo pacman -S bash-completion \
+sudo pacman -S \
+               bash-completion \
                firefox-i18n-it firefox-ublock-origin \
                pluma \
                gnome-icon-theme kaffeine kio-extras kio kded \
@@ -54,7 +55,14 @@ cd ..
 yay
 
 yay -S jre8 
-yay -S jdownloader2 osx-arc-shadow capitaine-cursors lxkb_config-git virtualbox-ext-oracle ttf-ms-fonts gksu
+yay -S \
+        jdownloader2 \
+        osx-arc-shadow capitaine-cursors \
+        lxkb_config-git \
+        virtualbox-ext-oracle \
+        ttf-ms-fonts \
+        gksu \
+        gnome-system-tools
 
 #
 # Show keyboard geometry/model. https://superuser.com/q/1293956
