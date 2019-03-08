@@ -14,7 +14,7 @@ sudo pacman -S \
                evince \
                libreoffice-fresh-it \
                vlc libdvdcss pulseaudio \
-               k3b dvd+rw-tools kinit kparts \
+               k3b dvd+rw-tools kinit kparts cdrdao \
                gpicview \
                thunderbird-i18n-it \
                galculator-gtk2 \
@@ -35,7 +35,7 @@ sudo pacman -S \
                dosfstools mtools \
                htop \
                laptop-detect \
-               xf86-video-fbdev xf86-video-vesa \
+               xf86-video-fbdev xf86-video-intel xf86-video-nouveau xf86-video-vesa \
 	       # xf86-video-vmware \
                acpid \
                system-config-printer cups \
@@ -66,8 +66,7 @@ yay -S \
         virtualbox-ext-oracle \
         ttf-ms-fonts \
         gksu \
-        xorg-xkbprint \
-        gnome-system-tools
+        xorg-xkbprint
 
 #
 # Show keyboard geometry/model. https://superuser.com/q/1293956
