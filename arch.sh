@@ -5,7 +5,7 @@ set -e
 sudo pacman -Syu
 
 # I pacchetti correlati (od opzionali) inserirli sulla stessa linea.
-# Se si vuole evitare di installare pacchetti commentare le righe.
+# Se si vuole evitare di installare pacchetti cancellare le righe.
 sudo pacman -S \
                bash-completion \
                firefox-i18n-it firefox-ublock-origin \
