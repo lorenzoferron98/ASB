@@ -9,7 +9,7 @@ sudo pacman -Syu
 sudo pacman -S firefox-i18n-it firefox-ublock-origin \
                pluma \
                gnome-icon-theme kaffeine kio-extras kio kded \
-               vlc libdvdcss pulseaudio \
+               vlc libdvdcss mesa-vdpau pulseaudio \
                wicd-gtk xfce4-notifyd python2-notify \
                xdg-utils xdg-user-dirs-gtk \
                ntfs-3g \
@@ -29,6 +29,8 @@ sudo pacman -S firefox-i18n-it firefox-ublock-origin \
                git \
                xorg-xkill \
                evince \
+               nvidia-390xx nvidia-settings \
+               d-feet python-dbus \
                ntp
 
 sudo pacman -S --needed base-devel
@@ -64,11 +66,11 @@ sudo nano /etc/ntp.conf
 #		XkbVariant: se vuoto usa "", localectl list-x11-keymap-variants [layout] \
 #		XkbOptions: localectl list-x11-keymap-options
 #
-#localectl set-x11-keymap \
-#	it \
-#	pc105 \
-#	"" \
-#	terminate:ctrl_alt_bksp
+localectl set-x11-keymap \
+	it \
+	pc105 \
+	"" \
+	terminate:ctrl_alt_bksp
 
 sudo systemctl enable lxdm
 sudo systemctl start wicd
