@@ -10,7 +10,7 @@ sudo pacman -S \
                bash-completion \
                firefox-i18n-it firefox-ublock-origin \
                pluma \
-               gnome-icon-theme kaffeine kio-extras kio kded \
+               # gnome-icon-theme kaffeine kio-extras kio kded \
                evince \
                libreoffice-fresh-it \
                vlc libdvdcss pulseaudio \
