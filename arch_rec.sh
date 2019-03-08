@@ -6,7 +6,8 @@ sudo pacman -Syu
 
 # I pacchetti correlati (od opzionali) inserirli sulla stessa linea.
 # Se si vuole evitare di installare pacchetti commentare le righe.
-sudo pacman -S firefox-i18n-it firefox-ublock-origin \
+sudo pacman -S \
+	       firefox-i18n-it firefox-ublock-origin \
                pluma \
                gnome-icon-theme kaffeine kio-extras kio kded \
                vlc libdvdcss mesa-vdpau pulseaudio \
