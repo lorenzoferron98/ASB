@@ -2,13 +2,22 @@
 
 set -e
 
+cat /proc/asound/cards
+echo
+read -p "Enter Your Card: "  card
+sudo bash -c "cat >> /etc/asound.conf" << EOL
+defaults.ctl.card ${card}
+defaults.pcm.card ${card}
+defaults.timer.card ${card}
+EOL
+
 sudo pacman -Syu
 
 # I pacchetti correlati (od opzionali) inserirli sulla stessa linea.
 # Se si vuole evitare di installare pacchetti cancellare le righe.
 sudo pacman -S \
                bash-completion \
-               firefox-i18n-it firefox-ublock-origin \
+               firefox-i18n-it \
                pluma \
                # gnome-icon-theme kaffeine kio-extras kio kded \
                evince \
@@ -108,5 +117,8 @@ sudo systemctl enable ntpd
 # Unused service with wicd enabled
 sudo systemctl stop dhcpcd.service 
 sudo systemctl disable dhcpcd.service
+
+alsamixer
+sudo alsactl store
 
 sudo reboot now
