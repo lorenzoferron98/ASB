@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
+clear
 cat /proc/asound/cards
 echo
 read -p "Enter Your Card: "  card
@@ -118,6 +119,18 @@ sudo systemctl enable ntpd
 sudo systemctl stop dhcpcd.service 
 sudo systemctl disable dhcpcd.service
 
+clear
+echo "*******************************************"
+echo
+echo "	- Press F5"
+echo "	- Use arrow (->) to move until"
+echo "	  hitting the <Auto-Mute> control"
+echo "	- use the minus (-) key to switch"
+echo "	- hit Esc to exit"
+echo
+echo "*******************************************"
+read -p "Press enter to continue..."
+echo
 alsamixer
 sudo alsactl store
 
