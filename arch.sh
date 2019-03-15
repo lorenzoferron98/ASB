@@ -45,7 +45,7 @@ sudo pacman -S \
                dosfstools mtools \
                htop \
                laptop-detect \
-               xf86-video-fbdev xf86-video-intel xf86-video-nouveau xf86-video-vesa \
+               # xf86-video-fbdev xf86-video-intel xf86-video-nouveau xf86-video-vesa \
 	       # xf86-video-vmware \
                acpid \
                system-config-printer cups \
@@ -53,7 +53,7 @@ sudo pacman -S \
                gimp \
                git \
                xorg-xkill \
-               nvidia-settings \
+               nvidia-390xx-settings nvidia-390xx lib32-nvidia-390xx-utils nvidia-390xx-utils vdpauinfo libva-utils \
                gnome-screenshot \
                pinta \
                ntp
