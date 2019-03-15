@@ -114,6 +114,8 @@ sudo systemctl start usbmuxd.service
 sudo systemctl enable usbmuxd.service
 sudo systemctl start ntpd
 sudo systemctl enable ntpd
+sudo systemctl start acpid.service
+sudo systemctl enable acpid.service
 
 # Unused service with wicd enabled
 sudo systemctl stop dhcpcd.service 
