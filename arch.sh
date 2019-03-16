@@ -53,7 +53,7 @@ sudo pacman -S \
                gimp \
                git \
                xorg-xkill \
-	       bumblebee mesa xf86-video-intel nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils lib32-virtualgl bbswitch nvidia-390xx-settings vdpauinfo libva-utils \
+	       bumblebee mesa xf86-video-intel nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils lib32-virtualgl bbswitch nvidia-390xx-settings vdpauinfo libva-utils primus libxss \
                gnome-screenshot \
                pinta \
                ntp
