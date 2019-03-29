@@ -41,7 +41,7 @@ sudo pacman -S \
                xorg-xkill \
                evince \
                nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-390xx-settings \
-               d-feet python-dbus \
+               d-feet python-dbus kshutdown \
                ntp
 
 sudo pacman -S --needed base-devel
