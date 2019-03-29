@@ -2,12 +2,22 @@
 
 set -e
 
+clear
+cat /proc/asound/cards
+echo
+read -p "Enter Your Card: "  card
+sudo bash -c "cat >> /etc/asound.conf" << EOL
+defaults.ctl.card ${card}
+defaults.pcm.card ${card}
+defaults.timer.card ${card}
+EOL
+
 sudo pacman -Syu
 
 # I pacchetti correlati (od opzionali) inserirli sulla stessa linea.
 # Se si vuole evitare di installare pacchetti cancellare le righe.
 sudo pacman -S \
-	       firefox-i18n-it firefox-ublock-origin \
+	       firefox-i18n-it \
                pluma \
                gnome-icon-theme kaffeine kio-extras kio kded \
                vlc libdvdcss mesa-vdpau pulseaudio \
@@ -30,7 +40,7 @@ sudo pacman -S \
                git \
                xorg-xkill \
                evince \
-               nvidia-390xx nvidia-settings \
+               nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-390xx-settings \
                d-feet python-dbus \
                ntp
 
@@ -84,9 +94,28 @@ sudo systemctl start usbmuxd.service
 sudo systemctl enable usbmuxd.service
 sudo systemctl start ntpd
 sudo systemctl enable ntpd
+sudo systemctl start acpid.service
+sudo systemctl enable acpid.service
 
 # Unused service with wicd enabled
 sudo systemctl stop dhcpcd.service 
 sudo systemctl disable dhcpcd.service
+
+clear
+echo "*******************************************"
+echo
+echo "	- Press F5"
+echo "	- Use arrow (->) to move until"
+echo "	  hitting the <Auto-Mute> control"
+echo "	- use the minus (-) key to switch"
+echo "	- hit Esc to exit"
+echo
+echo "*******************************************"
+read -p "Press enter to continue..."
+echo
+alsamixer
+sudo alsactl store
+
+sudo touch /etc/pacman.d/hooks/nvidia.hook
 
 sudo reboot now
