@@ -31,7 +31,6 @@ sudo pacman -S \
                lxdm lxterminal menu-cache lxmenu-data lxhotkey lxinput lxsession lxde-common \
                lxpanel libnotify parcellite \
                lxappearance-obconf gtk-engine-murrine faenza-icon-theme gnome-themes-extra \
-               xarchiver zip unzip unrar tar gzip xz \
                dosfstools mtools \
                htop \
                xf86-video-fbdev xf86-video-vesa  \
