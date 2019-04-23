@@ -33,7 +33,6 @@ sudo pacman -S \
                lxappearance-obconf gtk-engine-murrine faenza-icon-theme gnome-themes-extra \
                dosfstools mtools \
                htop \
-               xf86-video-fbdev xf86-video-vesa  \
                acpid \
                alsa-utils xterm \
                git \
@@ -41,6 +40,8 @@ sudo pacman -S \
                evince \
                nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-390xx-settings \
                d-feet python-dbus kshutdown \
+	       ifuse libimobiledevice \
+	       v4l-utils \
                ntp
 
 sudo pacman -S --needed base-devel
@@ -57,6 +58,7 @@ yay -S \
 	osx-arc-shadow capitaine-cursors \
 	lxkb_config-git \
 	xorg-xkbprint \
+	ideviceinstaller-git \
 	gksu
 
 #
@@ -64,7 +66,6 @@ yay -S \
 #
 #	e.g.: setxkbmap -model pc104 -layout it -option terminate:ctrl_alt_bksp -print | xkbcomp - - | xkbprint - - | ps2pdf - > pc104_it.pdf
 # (vedi sopra, gia' presente)
-# yay -S xorg-xkbprint
 
 # https://en.wikipedia.org/wiki/NTP_pool
 sudo timedatectl set-timezone Europe/Rome
