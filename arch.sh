@@ -76,6 +76,7 @@ yay -S \
         virtualbox-ext-oracle \
         ttf-ms-fonts \
         gksu \
+	downgrader \
         xorg-xkbprint
 
 #
@@ -135,5 +136,8 @@ read -p "Press enter to continue..."
 echo
 alsamixer
 sudo alsactl store
+
+# sudo mkdir -p /etc/pacman.d/hooks/
+# sudo touch /etc/pacman.d/hooks/nvidia.hook
 
 sudo reboot now
