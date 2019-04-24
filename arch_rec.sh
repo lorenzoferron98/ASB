@@ -40,7 +40,7 @@ sudo pacman -S \
                evince \
                nvidia-390xx nvidia-390xx-utils lib32-nvidia-390xx-utils nvidia-390xx-settings \
                d-feet python-dbus kshutdown \
-	       ifuse libimobiledevice \
+	       ifuse libimobiledevice rsync \
 	       v4l-utils \
                ntp
 
@@ -59,6 +59,7 @@ yay -S \
 	lxkb_config-git \
 	xorg-xkbprint \
 	ideviceinstaller-git \
+	downgrader \
 	gksu
 
 #
@@ -116,6 +117,7 @@ echo
 alsamixer
 sudo alsactl store
 
+sudo mkdir -p /etc/pacman.d/hooks/
 sudo touch /etc/pacman.d/hooks/nvidia.hook
 
 sudo reboot now
